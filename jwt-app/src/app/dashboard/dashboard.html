@@ -1,35 +1,38 @@
-<div class="dashboard-container">
+<div class="dash">
 
-  <div class="dashboard-card">
+  <div class="box">
 
     <h2>JWT Authentication Dashboard</h2>
 
-    <h3>Welcome, {{ name }}</h3>
+    <div class="info">
 
-    <div class="details">
+      <div class="row">
+        <span class="label">Name</span>
+        <span class="colon">:</span>
+        <span class="value">{{ name }}</span>
+      </div>
 
-      <p>
-        <strong>Email:</strong>
-        {{ email }}
-      </p>
+      <div class="row">
+        <span class="label">Email</span>
+        <span class="colon">:</span>
+        <span class="value">{{ email }}</span>
+      </div>
 
-      <p>
-        <strong>Status:</strong>
-        <span class="success">
-          Authenticated ✔
-        </span>
-      </p>
+      <div class="row">
+        <span class="label">Status</span>
+        <span class="colon">:</span>
+        <span class="value success">Authenticated ✔</span>
+      </div>
 
-      <p>
-        <strong>Message:</strong>
-        {{ message }}
-      </p>
+      <div class="row">
+        <span class="label">Message</span>
+        <span class="colon">:</span>
+        <span class="value">{{ message }}</span>
+      </div>
 
     </div>
 
-    <button (click)="logout()">
-      Logout
-    </button>
+    <button (click)="logout()">Logout</button>
 
   </div>
 

@@ -1,33 +1,57 @@
-.dashboard-container {
+.dash {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #eef2f7;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  font-family: Arial;
 }
 
-.dashboard-card {
+.box {
   width: 450px;
   background: white;
-  padding: 35px;
+  padding: 30px;
   border-radius: 12px;
-  box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-.dashboard-card h2 {
-  text-align: center;
-  margin-bottom: 25px;
-  color: #1976d2;
-}
-
-.dashboard-card h3 {
+h2 {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.details p {
-  margin-bottom: 15px;
-  font-size: 16px;
+/* 🔥 KEY FIX */
+.info {
+  display: table;
+  width: 100%;
+}
+
+.row {
+  display: table-row;
+}
+
+.label, .colon, .value {
+  display: table-cell;
+  padding: 8px 5px;
+  vertical-align: top;
+}
+
+/* fixed alignment widths */
+.label {
+  width: 110px;
+  font-weight: bold;
+  color: #333;
+}
+
+.colon {
+  width: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+}
+
+.value {
+  color: #444;
 }
 
 .success {
@@ -38,14 +62,14 @@
 button {
   width: 100%;
   padding: 12px;
-  background: crimson;
-  color: white;
+  background: #ff4d4d;
   border: none;
-  border-radius: 6px;
+  color: white;
+  border-radius: 8px;
   cursor: pointer;
   margin-top: 15px;
 }
 
 button:hover {
-  background: darkred;
+  background: #e60000;
 }

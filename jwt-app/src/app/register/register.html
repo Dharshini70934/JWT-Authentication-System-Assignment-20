@@ -1,32 +1,21 @@
-<div class="container">
+<div class="page">
+
   <div class="card">
 
-    <h2>JWT Authentication Register</h2>
+    <h2>JWT Register</h2>
+    <p class="sub">Create account</p>
 
-    <input
-      type="text"
-      placeholder="Enter Name"
-      [(ngModel)]="name"
-    >
-
-    <input
-      type="email"
-      placeholder="Enter Email"
-      [(ngModel)]="email"
-    >
-
-    <input
-      type="password"
-      placeholder="Enter Password"
-      [(ngModel)]="password"
-    >
+    <input type="text" placeholder="Name" [(ngModel)]="name">
+    <input type="email" placeholder="Email" [(ngModel)]="email">
+    <input type="password" placeholder="Password" [(ngModel)]="password">
 
     <button (click)="register()">Register</button>
 
-    <p>
-      Already have an account?
+    <p class="link">
+      Already have account?
       <a routerLink="/login">Login</a>
     </p>
 
   </div>
+
 </div>
