@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="card">
+
+    <h2>JWT Authentication Register</h2>
+
+    <input
+      type="text"
+      placeholder="Enter Name"
+      [(ngModel)]="name"
+    >
+
+    <input
+      type="email"
+      placeholder="Enter Email"
+      [(ngModel)]="email"
+    >
+
+    <input
+      type="password"
+      placeholder="Enter Password"
+      [(ngModel)]="password"
+    >
+
+    <button (click)="register()">Register</button>
+
+    <p>
+      Already have an account?
+      <a routerLink="/login">Login</a>
+    </p>
+
+  </div>
+</div>

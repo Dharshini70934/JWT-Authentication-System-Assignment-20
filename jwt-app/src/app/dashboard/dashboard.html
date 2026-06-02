@@ -1,0 +1,36 @@
+<div class="dashboard-container">
+
+  <div class="dashboard-card">
+
+    <h2>JWT Authentication Dashboard</h2>
+
+    <h3>Welcome, {{ name }}</h3>
+
+    <div class="details">
+
+      <p>
+        <strong>Email:</strong>
+        {{ email }}
+      </p>
+
+      <p>
+        <strong>Status:</strong>
+        <span class="success">
+          Authenticated ✔
+        </span>
+      </p>
+
+      <p>
+        <strong>Message:</strong>
+        {{ message }}
+      </p>
+
+    </div>
+
+    <button (click)="logout()">
+      Logout
+    </button>
+
+  </div>
+
+</div>
